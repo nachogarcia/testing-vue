@@ -28,5 +28,4 @@ describe('Phrase', () => {
     expect(phrase.isLong).toBe(false)
     expect(longPhrase.isLong).toBe(true)
   })
-
 })

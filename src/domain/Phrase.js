@@ -1,17 +1,17 @@
 const longPhraseThreshold = 15
 
 class Phrase {
-  constructor({ id, categories, text }) {
+  constructor ({ id, categories, text }) {
     this.id = id
     this.categories = categories
     this.text = text
   }
 
-  get isNerdy() {
+  get isNerdy () {
     return this.categories.includes('nerdy')
   }
 
-  get isLong() {
+  get isLong () {
     return this.text.length > longPhraseThreshold
   }
 }
