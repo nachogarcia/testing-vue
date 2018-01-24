@@ -1,6 +1,6 @@
 # testing-vue
 
-> A Vue.js project
+[Workshop slides](https://docs.google.com/presentation/d/1vo2_U14owUTOTGM4mz1-xZZg3m8S74qjfLHm7nJLBAQ/edit?usp=sharing)
 
 ## Build Setup
 
