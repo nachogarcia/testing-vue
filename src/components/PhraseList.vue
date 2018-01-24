@@ -5,6 +5,7 @@
       {{ importantPhrase.text }}
     </p>
     <h1>Random phrases</h1>
+    <button @click="getPhrases">Get more phrases</button>
     <ul>
       <li :key="phrase.id" v-for="phrase in randomPhrases">
         {{ phrase.text }}
@@ -24,6 +25,12 @@ export default {
     importantPhrase: {},
     randomPhrases: []
   }),
+
+  methods: {
+    async getPhrases () {
+      this.randomPhrases = await phraseService.getRandomPhrases(numberOfPhrases)
+    }
+  },
 
   async created () {
     this.importantPhrase = await phraseService.getMostImportantPhrase()
